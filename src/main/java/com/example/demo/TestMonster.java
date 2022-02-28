@@ -14,7 +14,12 @@ public class TestMonster {
         MonsterHandler monsterHandler = new MonsterHandler();
         monsterHandler.handleMonsters(monsters);
 
-        Monster m4 = new Monster("u2u2");
+        Monster m4 = new Monster("u2u2") {
+            @Override
+            public String attack() {
+                return "default attack";
+            }
+        };
         System.out.println(m4.attack());
     }
 }
