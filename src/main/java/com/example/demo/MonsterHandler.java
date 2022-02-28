@@ -2,8 +2,8 @@ package com.example.demo;
 
 public class MonsterHandler {
 
-    public void handleMonsters(Monster[] monsters) {
-        for(Monster monster: monsters) {
+    public void handleMonsters(IMonster[] monsters) {
+        for(IMonster monster: monsters) {
             System.out.println(monster.attack());
         }
     }

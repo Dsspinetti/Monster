@@ -3,7 +3,7 @@ package com.example.demo;
 public class TestMonster {
     public static void main(String[] args) {
 
-        Monster[] monsters = {
+        IMonster[] monsters = {
                 new FireMonster("r2u2"),
                 new WaterMonster("u2r2"),
                 new StoneMonster("r2r2"),
@@ -14,12 +14,5 @@ public class TestMonster {
         MonsterHandler monsterHandler = new MonsterHandler();
         monsterHandler.handleMonsters(monsters);
 
-        Monster m4 = new Monster("u2u2") {
-            @Override
-            public String attack() {
-                return "default attack";
-            }
-        };
-        System.out.println(m4.attack());
     }
 }

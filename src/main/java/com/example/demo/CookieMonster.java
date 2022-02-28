@@ -1,12 +1,18 @@
 package com.example.demo;
 
-public class CookieMonster extends Monster {
+public class CookieMonster implements IMonster {
+
+    private String name;
 
     public CookieMonster(String name) {
-        super(name);
+        this.name = name;
     }
 
     public String attack() {
         return getName() + " attack with cookies";
+    }
+    @Override
+    public String getName() {
+        return name;
     }
 }

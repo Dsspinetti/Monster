@@ -1,9 +1,18 @@
 package com.example.demo;
 
-public class WaterMonster extends Monster {
+public class WaterMonster implements IMonster {
+
+    @Override
+    public String getName() {
+
+        return name;
+    }
+
+    private String name;
 
     public WaterMonster(String name) {
-        super(name);
+
+        this.name = name;
     }
 
     public String attack() {

@@ -1,9 +1,16 @@
 package com.example.demo;
 
-public class StoneMonster extends Monster {
+public class StoneMonster implements IMonster {
+
+    public String getName() {
+        return name;
+    }
+
+    private String name;
 
     public StoneMonster(String name) {
-        super(name);
+
+        this.name = name;
     }
 
     public String attack() {
